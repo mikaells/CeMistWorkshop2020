@@ -1,0 +1,10 @@
+We will be using the R programming language to do our statistics. 
+
+Start by installing R:
+https://mirrors.dotsrc.org/cran/
+
+The, install Rstudio. R studio is the editor we use to write and run R-code in.
+https://rstudio.com/products/rstudio/download/#download
+
+Finally, do a couple of simple R-exercises to get the basics down.
+https://www.datacamp.com/courses/free-introduction-to-r
