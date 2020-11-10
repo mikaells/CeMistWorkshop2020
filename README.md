@@ -13,6 +13,7 @@ Reading:
 
 Choose your own genome assembler workflow 
 https://github.com/rrwick/Trycycler/wiki/Guide-to-bacterial-genome-assembly
+
 Genome assembly comparison
                 https://f1000research.com/articles/8-2138          
 DNA extraction
