@@ -7,9 +7,38 @@ The workshop this year will have two main themes: Whole Genome Sequencing (WGS) 
 
 # Day 1 @ Tue Sparholt Jørgensen
 
-The theory and practice behind Nanopore sequencing, assembly and analysis
+The theory and practice behind genome sequencing, assembly and analysis
 
---timeplan & curriculum goes her
+Reading: 
+
+Choose your own genome assembler workflow 
+https://github.com/rrwick/Trycycler/wiki/Guide-to-bacterial-genome-assembly
+Genome assembly comparison
+                https://f1000research.com/articles/8-2138          
+DNA extraction
+                https://lab.loman.net/2018/05/25/dna-extraction-book-chapter/
+
+Day plan: 
+9-9:15 welcome
+9:15-9:45 lecture 1: Genome assembly and annotation
+9:45-12: exercise1: genome assembly and polishing: choose one of three
+11ish: time for coffee while the assembly and or polishing runs
+12-12:45 lunch
+12:45-13:15 exercise 1: genome assembly and polishing 
+13:15-13:45 lecture 2: DNA extraction and long read sequencing
+13:45-16:30: exercise 2: gene and functional annotation
+15ish coffee time while prokka + antiSMASH runs
+16:30-17:00 wrap-up and discussion of report
+Report: complete the other two genome assemblies and hand in a brief report on the tools used and results obtained
+
+Reading: 
+Choose your own genome assembler workflow 
+https://github.com/rrwick/Trycycler/wiki/Guide-to-bacterial-genome-assembly
+Genome assembly comparison
+                https://f1000research.com/articles/8-2138          
+DNA extraction
+                https://lab.loman.net/2018/05/25/dna-extraction-book-chapter/
+
 
 
 # Day 2 @ Mathies Brinks Sørensen
