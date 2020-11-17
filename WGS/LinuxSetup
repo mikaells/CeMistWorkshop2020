@@ -20,9 +20,12 @@ Go to
 
 Right click the Linux, 64 bit, python37 link and copy the hyperlink
 
-Run
+Download miniconda installer
 	wget LINK
 with LINK being the link you just got (you can paste by right clicking). This will download the installer 
+
+Run miniconda installer
+	bash Miniconda*.sh
 
 Click yes to all 
 
