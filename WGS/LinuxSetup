@@ -28,7 +28,7 @@ Run miniconda installer
 	bash Miniconda*.sh
 
 Click yes to all 
-
+Close your terminal and reopen it
 Make your environment by 
 	conda create --name your_env_name 
 Your_env_name should be a good name for what you want to do with it. CemistWorkshop might be good
