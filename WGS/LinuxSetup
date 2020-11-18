@@ -45,7 +45,7 @@ pyani (https://github.com/widdowquinn/pyani) for example installs like this
 	conda install -c conda-forge -c bioconda -c defaults pyani
 	
 All software for the course can be installed by:
-  conda install -c bioconda porechop adapterremoval fastqc flye pilon bandage busco prodigal prokka assembly-stats racon filtlong bbmap
+  conda install -c bioconda porechop adapterremoval fastqc flye pilon bandage busco=4.1.4 prodigal prokka assembly-stats racon filtlong bbmap
 
 #Mac specific (thank you Kresten!):
 Generally, terminal does not allow installation of the linux package for miniconda, it's necessary to instead use a MacOS version. 
