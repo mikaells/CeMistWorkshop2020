@@ -45,7 +45,7 @@ pyani (https://github.com/widdowquinn/pyani) for example installs like this
 	conda install -c conda-forge -c bioconda -c defaults pyani
 	
 All software for the course can be installed by:
-  	conda install -c bioconda porechop adapterremoval fastqc flye pilon bandage prodigal prokka assembly-stats racon filtlong tbl2asn-forever bbmap
+  	conda install -c bioconda porechop adapterremoval fastqc flye pilon bandage prodigal prokka assembly-stats racon filtlong tbl2asn-forever bbmap bowtie2 samtools
 For busco, create a seperate conda environment
 	conda create -n busco -c bioconda -c conda-forge busco=4.1.4
 
