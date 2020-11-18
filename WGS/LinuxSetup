@@ -46,3 +46,11 @@ pyani (https://github.com/widdowquinn/pyani) for example installs like this
 	
 All software for the course can be installed by:
   conda install -c bioconda porechop adapterremoval fastqc flye pilon bandage busco prodigal prokka assembly-stats racon filtlong bbmap
+
+#Mac specific (thank you Kresten!):
+Generally, terminal does not allow installation of the linux package for miniconda, it's necessary to instead use a MacOS version. 
+But don't use the newest version, as this will create issues with the pythin version. Instead install the Miniconda3-py37_4.8.3-MacOSX-x86_64.sh package. 
+This will allow installation of flye assembler.
+Then, use the following to install busco: 
+	conda install -c bioconda -c conda-forge  busco=4.1.4    
+For Bandage, see https://github.com/rrwick/Bandage/releases/
