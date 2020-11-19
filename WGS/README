@@ -9,6 +9,7 @@ Exercise: Genome assembly and annotation
     a.	for nanopore, use porechop
         i.	it may be necessary to set up a separate porechop conda enviroment
     b.	for illumina, use Adapterrermoval
+    c.  for each datatype, view the first 25 reads (use head -n 100 FILE.fq)
 c.	check nanopore read N50 and total nt with assembly-stats
 4.	Reduce nanopore dataset to half size with filtlong  and the information from assembly-stats
 5.	Assemble nanopore data with flye
