@@ -1,1 +1,42 @@
 This is where we do the Whole genome sequencing. Remember to read the LinuxSetup and files about homework.
+
+Exercise: Genome assembly and annotation
+1.	Download genome to unix system
+    a.	if using windows ubuntu app, you can download the data to your computer and copy it to your local ubuntu folder like this, change USERNAME to your username and Downloads to the folder where you downloaded the file to. use autocomplete to make sure that the path exist: 
+        i.	cp  /mnt/c/Users/USERNAME.WIN/Downloads/genome1.tar.gz .
+2.	Unpack tar file
+3.	Clean up reads: 
+    a.	for nanopore, use porechop
+        i.	it may be necessary to set up a separate porechop conda enviroment
+    b.	for illumina, use Adapterrermoval
+c.	check nanopore read N50 and total nt with assembly-stats
+4.	Reduce nanopore dataset to half size with filtlong  and the information from assembly-stats
+5.	Assemble nanopore data with flye
+    a.	set flye to run on the number of available processors
+    b.	if flye fails, it’s likely RAM usage limits, reduce nummber of CPUs in use
+    c.	if flye fails again, try closing RAM consuming programs like chrome and retry
+    d.	if flye fails again, install and run Shasta v0.5.1 (NB: not the newest version)
+6.	View assembly graph (.gfa) with Bandage.
+    a.	if X11 forwarding doesn’t work use “Bandage image” and copy the resulting file to a windows readable location like /mnt/c/Users/USERNAME.WIN/Downloads/. then view the graph. 
+    b.	Alternatively, download Bandage to windows and copy the .gfa file to the Windows file system https://rrwick.github.io/Bandage/ 
+    c.	is the genome complete and circular? are there plasmids? if the chromosome is not complete, go back and assemble again with additional data
+7.	View basic statistics with the stats.sh tool from bbmap and the contig fasta file
+    a.	note the GC%, the longest contig and the number of contigs
+8.	If there is illumina data: Polish genome with racon
+    a.	map reads to the assembly.fasta file using bowtie2
+        i.	Build index with bowtie2-build 
+        ii.	Map reads with bowtie2 using the -U switch, and only read1!
+    b.	Use racon to polish the assembly
+9.	Use the web interface of autoMLST to find nearest database hit, ANI%
+a.	 remember that you can copy file to windows for example with “cp FILE /mnt/c/User/USERNAME.WIN/Downloads/FILE”
+10.	Evaluate core gene content with BUSCO
+    a.	activate conda busco environment if necessary
+    b.	use the information from autoMLST to set lineage to save RAM and time
+    c.	find BUSCO lineage on https://busco.ezlab.org/frames/bact.htm
+    d.	run busco again on the unpolished genome. is there a difference in the number of complete genes?
+11.	Annotate polished genome with prokka
+    a.	use the prokka log file with the command grep to find how many genes were not annotated
+12.	Predict biosynthetic gene clusters with antiSMASH (online or command line)
+    a.	use the prokka genbank files as input
+13.	write down the genome assembly stats, phylogetic placement incl %ANI, number of BCGs, number of annotated genes, and 1-2 compounds predicted by 
+14.	You have completed the exercise.
