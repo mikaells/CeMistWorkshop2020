@@ -97,4 +97,5 @@ sqrt(mse3_test_enet)
 # compare the models
 rbind(sqrt(mse2_test_lasso),sqrt(mse_test_rigde),sqrt(mse3_test_enet))
 
-
+tmp_coeffs <- coef(ridge_cv, s = "lambda.min")
+data.frame(name = tmp_coeffs@Dimnames[[1]][tmp_coeffs@i + 1], coefficient = tmp_coeffs@x)
